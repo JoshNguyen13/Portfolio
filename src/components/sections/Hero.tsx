@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section id="about" className="border-b border-border py-20 sm:py-28">
       <div className="mx-auto max-w-4xl px-6">
-        <p className="text-sm font-medium tracking-wide text-accent uppercase">
+        <p className="inline-block rounded-full bg-accent px-3 py-1 text-xs font-medium tracking-wide text-accent-foreground uppercase">
           {profile.location}
         </p>
         <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f4f4f5"/>
+  <g stroke="#efea5a" stroke-width="2" opacity="0.6">
+    <line x1="-50" y1="500" x2="500" y2="-50"/>
+    <line x1="100" y1="500" x2="650" y2="-50"/>
+    <line x1="250" y1="500" x2="800" y2="-50"/>
+    <line x1="400" y1="500" x2="950" y2="-50"/>
+  </g>
+  <rect x="0" y="0" width="800" height="450" fill="none" stroke="#e4e4e7" stroke-width="2"/>
+  <text x="400" y="235" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#18181b" text-anchor="middle">Recipe &amp; Meal Planner</text>
+  <text x="400" y="268" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#71717a" text-anchor="middle">Preview image placeholder</text>
+</svg>
