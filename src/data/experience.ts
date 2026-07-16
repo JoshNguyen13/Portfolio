@@ -2,36 +2,27 @@ import { ExperienceEntry } from "@/types";
 
 export const experience: ExperienceEntry[] = [
   {
-    role: "Senior Software Engineer",
-    org: "Northwind Labs",
-    start: "2023",
+    role: "Reviewer / AI Data Annotator",
+    org: "Handshake AI (Remote)",
+    start: "Jun. 2026",
     end: "Present",
     description:
-      "Lead engineer on the platform team, responsible for the core API and internal developer tooling used by 15+ product engineers.",
+      "Reviewing and annotating multi-modal training data for AI model development, enforcing strict quality and accuracy standards across projects.",
     highlights: [
-      "Redesigned the service's data layer, cutting p95 API latency by 40%",
-      "Built an internal CLI that reduced local environment setup time from 45 minutes to under 5",
-      "Mentored three junior engineers through onboarding and their first major feature launches",
+      "Promoted to Reviewer for Project Manuscript II, auditing timestamped, multi-modal video captions (scene composition, character actions, camera movement, speech) for AI model training, enforcing strict no-omission/no-hallucination standards to ensure dataset accuracy",
+      "Annotated audio, visual, and text data for Project Hedgehog to improve AI model accuracy, maintaining required quality benchmarks",
     ],
   },
   {
-    role: "Software Engineer",
-    org: "Bright Path Technologies",
-    start: "2021",
-    end: "2023",
+    role: "Student Assistant",
+    org: "Parking and Transportation Services, UT Austin",
+    start: "Feb. 2026",
+    end: "May 2026",
     description:
-      "Full-stack engineer on a small team building customer-facing dashboards and the underlying reporting infrastructure.",
+      "Supported daily garage operations and customer service for university parking facilities.",
     highlights: [
-      "Shipped a self-serve reporting feature adopted by 80% of active customers within two quarters",
-      "Migrated the frontend from a legacy Angular app to React, improving build times by 3x",
+      "Monitored daily garage operations, including entry/exit activity and enforcement of university parking policies, while coordinating with staff to maintain efficient traffic flow and safety in high-traffic facilities",
+      "Provided customer support to students and visitors, resolving parking inquiries and access/permit issues",
     ],
-  },
-  {
-    role: "Software Engineering Intern",
-    org: "Cedarwood Systems",
-    start: "2020",
-    end: "2020",
-    description:
-      "Worked on the mobile team building features for the company's flagship iOS and Android app.",
   },
 ];

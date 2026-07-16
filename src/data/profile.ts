@@ -1,14 +1,13 @@
 import { Profile } from "@/types";
 
 export const profile: Profile = {
-  name: "Jordan Avery",
-  tagline: "Software Engineer building fast, thoughtful products",
-  bio: "I'm a software engineer who enjoys turning ambiguous problems into clean, reliable systems. I've spent my career working across the stack — from React front ends to backend APIs and infrastructure — and I care most about building things that are simple to use and simple to maintain.",
-  location: "San Francisco, CA",
-  email: "hello@example.com",
+  name: "Joshua Nguyen",
+  tagline: "I like to build things",
+  bio: "I'm a Computer Science student at UT Austin, minoring in Business Foundations through McCombs, working toward a career in software engineering. I have a focus on full-stack development, backend systems, computer vision, and design. I like tackling problems that require both technical precision and creative problem-solving.",
+  location: "Austin, TX",
+  email: "joshng2014@gmail.com",
   links: {
-    github: "https://github.com/example",
-    linkedin: "https://linkedin.com/in/example",
-    twitter: "https://twitter.com/example",
+    github: "https://github.com/JoshNguyen13",
+    linkedin: "https://linkedin.com/in/JoshuaLNguyen",
   },
 };
