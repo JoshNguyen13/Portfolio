@@ -23,4 +23,15 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/JoshNguyen13/Voice-Tutor",
     featured: true,
   },
+  {
+    slug: "macrobook",
+    title: "MacroBook",
+    summary: "Paste a TikTok or Instagram recipe link and get it parsed into ingredients, macros, and a logged calorie entry automatically.",
+    image: "projects/macrobook-portfolio-preview.png", 
+    description: "A calorie tracker and recipe manager built with Expo (React Native) for iOS, Android, and web from one codebase, backed by Supabase (Postgres, auth, RLS, Edge Functions). Beyond standard calorie tracking (USDA FoodData Central search, serving-based logging, barcode scanning via Open Food Facts, weekly trend charts) the core feature is recipe import from TikTok, Instagram, and YouTube links: an Edge Function fetches each platform's caption/description (TikTok oEmbed, YouTube Data API, or Instagram page metadata with automatic retry for its inconsistent responses), then parses it into structured ingredients and steps through a three-tier cascade — free regex heuristics first, a schema.org/Recipe scraper against any linked recipe blog second, and Gemini as an LLM fallback last — to minimize paid API calls while still handling messy, unstructured captions. Macros are extracted directly when a creator states them, or estimated from the parsed ingredient list via per-ingredient USDA lookups otherwise. Recipe search (Spoonacular) and calorie data are proxied through server-side Edge Functions so third-party API keys never reach the client.",
+    tags: ["React Native", "Expo", "Supabase", "PostgreSQL", "Gemini", "TypeScript"],
+    liveUrl: "https://macrobook-joshuanguyen.vercel.app/", 
+    repoUrl: "https://github.com/JoshNguyen13/MacroBook",
+    featured: true,
+  },
 ];
