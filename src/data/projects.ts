@@ -17,7 +17,7 @@ export const projects: Project[] = [
     title: "Voice Tutor",
     summary: "A real-time speech coaching app that scores pace, accuracy, and delivery entirely in the browser.",
     image: "projects/VoiceTutor.png",
-    description: "A fully client-side public speaking coach that transcribes live speech via the Web Speech API and aligns it against target scripts with a Levenshtein edit-distance algorithm to score pace, accuracy, filler words, and hesitation pauses in real time. Includes a teleprompter mode with adjustable auto-scroll speed, live pitch/monotone detection via the Web Audio API, and instant audio playback -- all running serverless with zero paid APIs or backend.",
+    description: "A fully client-side public speaking coach that transcribes live speech via the Web Speech API and aligns it against target scripts with a Levenshtein edit-distance algorithm to score pace, accuracy, filler words, and hesitation pauses in real time. Includes a teleprompter mode with adjustable auto-scroll speed, live pitch/monotone detection via the Web Audio API, and instant audio playback.",
     tags: ["React", "Web Speech API", "Web Audio API", "Vite"],
     liveUrl: "https://voicetutor-joshuanguyen.vercel.app",
     repoUrl: "https://github.com/JoshNguyen13/Voice-Tutor",
