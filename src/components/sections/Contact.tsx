@@ -10,11 +10,8 @@ export default function Contact() {
           title="Let's work together"
           description="I'm always open to discussing new projects, opportunities, or just talking shop."
         />
-        <div className="flex flex-wrap gap-3">
-          <a
-            href={`mailto:${profile.email}`}
-            className="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
-          >
+        <div className="flex flex-wrap gap-4">
+          <a href={`mailto:${profile.email}`} className="pixel-btn bg-accent text-accent-foreground">
             {profile.email}
           </a>
           {profile.links.github && (
@@ -22,7 +19,7 @@ export default function Contact() {
               href={profile.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent"
+              className="pixel-btn bg-secondary text-secondary-foreground"
             >
               GitHub
             </a>
@@ -32,7 +29,7 @@ export default function Contact() {
               href={profile.links.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent"
+              className="pixel-btn bg-secondary text-secondary-foreground"
             >
               LinkedIn
             </a>

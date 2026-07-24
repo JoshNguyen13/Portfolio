@@ -16,15 +16,23 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b-[3px] border-ink bg-background">
       <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-semibold tracking-tight" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="font-heading text-xs text-accent sm:text-sm"
+          onClick={() => setOpen(false)}
+        >
           {profile.name}
         </Link>
 
-        <nav className="hidden gap-6 text-sm text-muted sm:flex">
+        <nav className="hidden gap-2 text-sm sm:flex">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="transition-colors hover:text-foreground">
+            <a
+              key={link.href}
+              href={link.href}
+              className="rounded-sm px-2 py-1 transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
               {link.label}
             </a>
           ))}
@@ -33,7 +41,7 @@ export default function Header() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-border sm:hidden"
+          className="pixel-border flex h-9 w-9 items-center justify-center rounded-sm sm:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
         >
@@ -47,12 +55,12 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-border px-6 py-4 text-sm sm:hidden">
+        <nav className="flex flex-col gap-1 border-t-[3px] border-ink px-6 py-4 text-sm sm:hidden">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="py-2 text-muted transition-colors hover:text-foreground"
+              className="rounded-sm px-2 py-2 transition-colors hover:bg-accent hover:text-accent-foreground"
               onClick={() => setOpen(false)}
             >
               {link.label}

@@ -39,24 +39,26 @@ export default async function ProjectPage({ params }: Props) {
         ← Back to projects
       </Link>
 
-      <h1 className="mt-6 text-3xl font-semibold tracking-tight sm:text-4xl">{project.title}</h1>
+      <h1 className="mt-6 font-heading text-xl leading-relaxed tracking-tight sm:text-2xl">
+        {project.title}
+      </h1>
       <p className="mt-3 text-lg text-muted">{project.summary}</p>
 
       <ul className="mt-5 flex flex-wrap gap-2">
         {project.tags.map((tag) => (
-          <li key={tag} className="rounded-full border border-border px-3 py-1 text-xs text-muted">
+          <li key={tag} className="pixel-chip text-muted">
             {tag}
           </li>
         ))}
       </ul>
 
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-6 flex flex-wrap gap-4">
         {project.liveUrl && (
           <a
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
+            className="pixel-btn bg-accent text-accent-foreground"
           >
             View live
           </a>
@@ -66,7 +68,7 @@ export default async function ProjectPage({ params }: Props) {
             href={project.repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent"
+            className="pixel-btn bg-secondary text-secondary-foreground"
           >
             View source
           </a>

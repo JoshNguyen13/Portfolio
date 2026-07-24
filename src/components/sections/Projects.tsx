@@ -4,7 +4,7 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function Projects() {
   return (
-    <section id="projects" className="border-b border-border py-20">
+    <section id="projects" className="border-b-[3px] border-ink py-20">
       <div className="mx-auto max-w-4xl px-6">
         <SectionHeading
           eyebrow="Work"

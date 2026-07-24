@@ -3,7 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 
 export default function Skills() {
   return (
-    <section id="skills" className="border-b border-border py-20">
+    <section id="skills" className="border-b-[3px] border-ink py-20">
       <div className="mx-auto max-w-4xl px-6">
         <SectionHeading eyebrow="Toolbox" title="Skills" />
         <div className="grid gap-8 sm:grid-cols-2">
@@ -14,10 +14,7 @@ export default function Skills() {
               </h3>
               <ul className="mt-3 flex flex-wrap gap-2">
                 {group.items.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-full border border-border px-3 py-1.5 text-sm"
-                  >
+                  <li key={item} className="pixel-chip text-sm">
                     {item}
                   </li>
                 ))}

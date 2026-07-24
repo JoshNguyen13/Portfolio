@@ -5,25 +5,20 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group flex flex-col rounded-xl border border-border p-6 transition-colors hover:border-accent"
+      className="pixel-panel group flex flex-col p-5 transition-transform duration-100 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[8px_8px_0_var(--color-shadow)]"
     >
-      <h3 className="w-fit font-semibold tracking-tight underline decoration-2 decoration-transparent underline-offset-4 transition-colors group-hover:decoration-accent">
-        {project.title}
-      </h3>
+      <h3 className="font-heading text-sm leading-relaxed tracking-tight">{project.title}</h3>
       <p className="mt-2 flex-1 text-sm text-muted">{project.summary}</p>
       {project.image && (
         <img
           src={project.image}
           alt={project.title}
-          className="mt-4 aspect-video w-full rounded-lg border border-border object-cover"
+          className="pixel-border mt-4 aspect-video w-full object-cover"
         />
       )}
       <ul className="mt-4 flex flex-wrap gap-2">
         {project.tags.map((tag) => (
-          <li
-            key={tag}
-            className="rounded-full border border-border px-2.5 py-1 text-xs text-muted"
-          >
+          <li key={tag} className="pixel-chip text-muted">
             {tag}
           </li>
         ))}

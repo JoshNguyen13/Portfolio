@@ -1,27 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #18181b;
-  --muted: #71717a;
-  --border: #e4e4e7;
-  --accent: #efea5a;
-  --accent-foreground: #18181b;
+  --background: #e9f1c9;
+  --surface: #d7dee0;
+  --foreground: #2b2f38;
+  --muted: #565d6b;
+  --ink: #2b2f38;
+  --shadow: #14161b;
+  --accent: #2f9c8f;
+  --accent-foreground: #0d211c;
+  --secondary: #e2707a;
+  --secondary-foreground: #33131a;
   color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
-  --color-border: var(--border);
+  --color-ink: var(--ink);
+  --color-shadow: var(--shadow);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --font-sans: var(--font-inter);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --font-sans: var(--font-vt323);
+  --font-heading: var(--font-press-start);
 }
 
 html,
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+body {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+@layer components {
+  .pixel-border {
+    border-width: 3px;
+    border-color: var(--ink);
+  }
+
+  .pixel-panel {
+    @apply rounded-sm;
+    border-width: 3px;
+    border-color: var(--ink);
+    background: var(--surface);
+    box-shadow: 6px 6px 0 var(--shadow);
+  }
+
+  .pixel-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-5 py-2.5 font-heading text-[0.65rem] uppercase tracking-wider transition-transform duration-100;
+    border-width: 3px;
+    border-color: var(--ink);
+    box-shadow: 4px 4px 0 var(--shadow);
+  }
+
+  .pixel-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 var(--shadow);
+  }
+
+  .pixel-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 var(--shadow);
+  }
+
+  .pixel-chip {
+    @apply rounded-sm px-2.5 py-1 text-xs;
+    border-width: 2px;
+    border-color: var(--ink);
+    background: var(--surface);
+  }
 }
