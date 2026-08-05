@@ -75,6 +75,18 @@ export default async function ProjectPage({ params }: Props) {
         )}
       </div>
 
+      {project.videoEmbedUrl && (
+        <div className="pixel-border mt-10 aspect-video w-full overflow-hidden">
+          <iframe
+            src={project.videoEmbedUrl}
+            title={`${project.title} demo video`}
+            className="h-full w-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      )}
+
       <p className="mt-10 leading-relaxed text-muted">{project.description}</p>
     </article>
   );

@@ -4,6 +4,8 @@ export type Project = {
   summary: string;
   description: string;
   image?: string;
+  /** YouTube/Vimeo embed URL, e.g. "https://www.youtube.com/embed/VIDEO_ID" or "https://player.vimeo.com/video/VIDEO_ID" */
+  videoEmbedUrl?: string;
   tags: string[];
   liveUrl?: string;
   repoUrl?: string;
