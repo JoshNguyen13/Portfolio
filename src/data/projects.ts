@@ -12,7 +12,7 @@ export const projects: Project[] = [
       "Hit reactions run on a custom ragdoll system built for Roblox's constraint-based avatar rig, including mass-scaled velocity ramping for continuous knockback and landing-gated recovery timing.",
       "Progression uses a rarity-weighted loot-crate economy with DataStore-backed persistence. Duplicate rolls bank EXP toward that move's next level (flat damage bonus per level, capped at 10) rather than being wasted.",
     ].join(" "),
-    tags: ["Roblox Studio", "Luau", "Client-Server Networking", "Physics Simulation", "DataStoreService"],
+    tags: ["Roblox Studio", "Luau", "Client-Server Networking", "DataStoreService"],
     liveUrl: "https://www.roblox.com/games/125161968549079/Voice-Wars",
     repoUrl: "",
     featured: true,
