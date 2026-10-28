@@ -34,6 +34,23 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    slug: "elevation",
+    title: "Elevation",
+    summary: "A daily stacking puzzle: build the tallest, strongest tower you can from 10 real objects, then see if it survives the day's disaster.",
+    videoEmbedUrl: "https://www.youtube.com/embed/c0O3BfKfpdQ",
+    description: [
+      "A daily browser puzzle game built at HackTX 2026 with a team of four. Every player gets the same 10 real objects (a fridge, a giraffe, a tennis ball) at their true relative sizes, two minutes to stack them, and the same disaster to test the tower: wind, earthquake, meteors, a tornado, a heavy jumper, or a cat swat. Score averages height and how long the tower stays standing, shown as the percent of the day's players you beat.",
+      "Built with Next.js, React, and Matter.js, with Supabase storing each day's puzzle and the leaderboard, hosted on Vercel. Every player gets the same puzzle and disaster, down to how the tower collapses.",
+      "An offline pipeline builds the object library: SerpAPI finds a photo, Gemini estimates real size and weight and draws the outline, and that outline is both what you see and the hitbox. Every API response is cached, so no object is paid for twice.",
+      "A par solver plays each day's puzzle through the real game engine with a beam search over piece, rotation, and position, scoring candidates against the actual disaster, so the results screen can replay the best tower found.",
+      "All sound is generated in code with no audio files. Physics, disasters, and sound were built as parallel tracks with separate file ownership.",
+    ].join(" "),
+    tags: ["Next.js", "React", "TypeScript", "Matter.js", "Supabase", "Gemini API", "SerpAPI"],
+    liveUrl: "https://elevationgame.vercel.app",
+    repoUrl: "https://github.com/JoshNguyen13/Elevation",
+    featured: true,
+  },
+  {
     slug: "voice-tutor",
     title: "Voice Tutor",
     summary: "A real-time speech coaching app that scores pace, accuracy, and delivery entirely in the browser.",

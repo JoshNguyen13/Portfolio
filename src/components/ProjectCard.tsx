@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { Project } from "@/types";
+import { getThumbnail } from "@/lib/thumbnail";
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const thumbnail = getThumbnail(project);
+
   return (
     <Link
       href={`/projects/${project.slug}`}
@@ -9,9 +12,9 @@ export default function ProjectCard({ project }: { project: Project }) {
     >
       <h3 className="font-heading text-sm leading-relaxed tracking-tight">{project.title}</h3>
       <p className="mt-2 flex-1 text-sm text-muted">{project.summary}</p>
-      {project.image && (
+      {thumbnail && (
         <img
-          src={project.image}
+          src={thumbnail}
           alt={project.title}
           className="pixel-border mt-4 aspect-video w-full object-cover"
         />

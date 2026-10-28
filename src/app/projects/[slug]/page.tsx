@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }: Props) {
         )}
       </div>
 
-      {project.videoEmbedUrl && (
+      {project.videoEmbedUrl ? (
         <div className="pixel-border mt-10 aspect-video w-full overflow-hidden">
           <iframe
             src={project.videoEmbedUrl}
@@ -85,6 +85,14 @@ export default async function ProjectPage({ params }: Props) {
             allowFullScreen
           />
         </div>
+      ) : (
+        project.image && (
+          <img
+            src={project.image}
+            alt={project.title}
+            className="pixel-border mt-10 aspect-video w-full object-cover"
+          />
+        )
       )}
 
       <p className="mt-10 leading-relaxed text-muted">{project.description}</p>
